@@ -1,0 +1,24 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "one stop for solution for all your todos alarms and notifications",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "dev": "backpack dev",
+    "build": "backpack build"
+  },
+  "author": "akshay upadhya <akshaysrinagar@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "awesome-typescript-loader": "^3.5.0",
+    "backpack-core": "^0.7.0",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^7.1.0",
+    "typescript": "^2.9.2"
+  }
+}

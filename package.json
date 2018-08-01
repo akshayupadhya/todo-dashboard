@@ -4,7 +4,7 @@
   "description": "one stop for solution for all your todos alarms and notifications",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js",
+    "start": "export NODE_ENV=production && npm run build && node build/main.js",
     "dev": "backpack dev",
     "build": "backpack build"
   },

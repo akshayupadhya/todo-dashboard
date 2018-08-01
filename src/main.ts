@@ -1,7 +1,8 @@
 import express, { Application, Request, Response } from 'express'
 import auth from './routes/auth'
-
+import logger from './logger'
 const app: Application = express()
+app.use(logger)
 app.get('/', (req: Request, res: Response) => {
   res.send('lets do it!!')
 })

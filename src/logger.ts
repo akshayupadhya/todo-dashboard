@@ -12,6 +12,10 @@ const filePath: string = join(__dirname, '../logs', fileName)
 const logStreams = createWriteStream(filePath, { flags: 'a' })
 const logger: Application = express()
 
-logger.use(morgan(process.env.NODE_ENV === 'development' ? 'dev' : 'tiny', { stream: logStreams }))
+logger.use(
+	morgan(process.env.NODE_ENV === 'development' ? 'combined' : 'tiny', {
+  stream: logStreams
+})
+)
 
 export default logger

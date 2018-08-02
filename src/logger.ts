@@ -1,4 +1,4 @@
-import express, { Application } from 'express'
+import { Router } from 'express'
 import morgan from 'morgan'
 import { config } from 'dotenv'
 import { join } from 'path'
@@ -10,7 +10,7 @@ const fileName: string =
 	process.env.NODE_ENV === 'development' ? 'dev.log' : 'prod.log'
 const filePath: string = join(__dirname, '../logs', fileName)
 const logStreams = createWriteStream(filePath, { flags: 'a' })
-const logger: Application = express()
+const logger: Router = Router()
 
 logger.use(
 	morgan(process.env.NODE_ENV === 'development' ? 'combined' : 'tiny', {

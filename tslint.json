@@ -4,6 +4,17 @@
         "tslint-config-standard"
     ],
     "jsRules": {},
-    "rules": {},
+    "rules": {
+        "tab_size": 2,
+        "indent": [
+            true,
+            "tabs",
+            2
+        ],
+        "ter-indent": [
+            true,
+            "tab"
+        ]
+    },
     "rulesDirectory": []
 }

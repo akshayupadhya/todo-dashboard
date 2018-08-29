@@ -4,7 +4,7 @@ import cns from './routes/cns'
 const router: Router = Router()
 
 router.get('/', (req: Request, res: Response) => {
-  res.send('lets do it!!')
+	res.send('lets do it!!')
 })
 
 router.use('/auth', auth)

@@ -3,9 +3,10 @@ node_modules
 # backpack build folder
 build
 # logs folder
-logs
+#logs
 
 .env
 
 package-lock.json
 tags
+yarn.lock

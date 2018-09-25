@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express'
-import auth from './routes/auth'
-import cns from './routes/cns'
+import auth from './controllers/auth'
+import cns from './controllers/cns'
 const router: Router = Router()
 
 router.get('/', (req: Request, res: Response) => {

@@ -3,7 +3,7 @@ node_modules
 # backpack build folder
 build
 # logs folder
-#logs
+logs
 
 .env
 

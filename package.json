@@ -4,9 +4,10 @@
   "description": "one stop for solution for all your todos alarms and notifications",
   "main": "app.js",
   "scripts": {
-    "start": "export NODE_ENV=production && npm run build && node build/main.js",
+    "start": "node build/main.js",
+    "postinstall":"export NODE_ENV=production && npm run build",
     "dev": "nodemon",
-    "build": "npx tsc",
+    "build": "tsc",
     "test": "jest",
     "test-watch": "jest --watch"
   },

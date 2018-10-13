@@ -6,7 +6,7 @@
   "scripts": {
     "start": "export NODE_ENV=production && npm run build && node build/main.js",
     "dev": "nodemon",
-    "build": "tsc",
+    "build": "npx tsc",
     "test": "jest",
     "test-watch": "jest --watch"
   },

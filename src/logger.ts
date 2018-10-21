@@ -14,8 +14,8 @@ const logger: Router = Router()
 
 logger.use(
 	morgan(process.env.NODE_ENV === 'development' ? 'combined' : 'tiny', {
-  stream: logStreams
-})
+		stream: logStreams
+	})
 )
 
 export default logger

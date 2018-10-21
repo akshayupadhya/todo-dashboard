@@ -1,3 +1,7 @@
 {
-	"editor.tabSize": 2
+	"editor.tabSize": 2,
+	"tslint.configFile": "tslint.json",
+	"tslint.jsEnable": true,
+	"tslint.trace.server": "verbose",
+	"tslint.validateWithDefaultConfig": true
 }

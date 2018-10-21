@@ -1,4 +1,4 @@
-import {Router} from 'express'
+import { Router } from 'express'
 import logger from './logger'
 import router from './router'
 
